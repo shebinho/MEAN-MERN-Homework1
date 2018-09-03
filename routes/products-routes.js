@@ -35,7 +35,7 @@ router.post("/", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  p.deleteProduct(req.body);
+  p.deleteProduct(req.params.id);
   res.status(200).send("Delete product");
 });
 

@@ -36,7 +36,7 @@ router.post("/", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  p.deletePurchase(req.body);
+  p.deletePurchase(req.params.id);
   res.status(200).send("Purchase Deleted");
 });
 

@@ -108,9 +108,8 @@ class Products {
   }
 
   deleteProduct(id) {
-    let filePath = [this.path, "indexer", "product-", product.id, ".json"].join(
-      ""
-    );
+    let filePath = [this.path, "product-", id, ".json"].join("");
+    console.log(filePath);
     files.deleteFile(filePath);
 
     return true;
