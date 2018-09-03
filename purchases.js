@@ -100,7 +100,7 @@ class Purchases {
   }
 
   deletePurchase(id) {
-    let filePath = [this.path, "indexer", "purchase-", id, ".json"].join("");
+    let filePath = [this.path,"purchase-", id, ".json"].join("");
     files.deleteFile(filePath);
 
     return true;
